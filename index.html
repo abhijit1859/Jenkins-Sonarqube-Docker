@@ -1,0 +1,150 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenkins Practice App</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      height: 300px;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      border: none;
+      background: white;
+      color: #333;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      width: 250px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>My Jenkins Practice Website</h1>
+    <p>CI/CD Demo Project</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome DevOps Engineer 🚀</h1>
+    <p>Practice Jenkins Pipelines with this simple app.</p>
+    <button onclick="showMessage()">Click Me</button>
+  </section>
+
+  <section class="cards">
+
+    <div class="card">
+      <h3>Docker</h3>
+      <p>Containerize applications easily.</p>
+    </div>
+
+    <div class="card">
+      <h3>Jenkins</h3>
+      <p>Automate CI/CD pipelines efficiently.</p>
+    </div>
+
+    <div class="card">
+      <h3>Kubernetes</h3>
+      <p>Orchestrate containers at scale.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>Made for Jenkins Practice | 2026</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Jenkins Deployment Successful!");
+    }
+  </script>
+
+</body>
+</html>
